@@ -12,7 +12,7 @@ check if Go is already installed on your computer by running the following comma
 ```
 go version
 ```
-if Go is not installed, please install it first.
+if Go is not installed, please install it first from the official website https://go.dev.
 
 **Installation**
 1. Clone this repository
