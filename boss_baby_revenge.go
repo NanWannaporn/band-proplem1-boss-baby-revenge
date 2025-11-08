@@ -9,6 +9,7 @@ check Boss Baby Behavior is a Good boy
 
 func BossBabayRevenge(input string) string {
 	var shotCnt, revengeCnt = 0, 0
+
 	if len(input) < 1 || len(input) > 1000000 {
 		return "invalid legnth"
 	}
