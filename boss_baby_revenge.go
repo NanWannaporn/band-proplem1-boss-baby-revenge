@@ -9,6 +9,9 @@ check Boss Baby Behavior is a Good boy
 
 func BossBabayRevenge(input string) string {
 	var shotCnt, revengeCnt = 0, 0
+	if len(input) < 1 || len(input) > 1000000 {
+		return "invalid legnth"
+	}
 
 	for i, cha := range input {
 		char := string(cha)
@@ -30,11 +33,11 @@ func BossBabayRevenge(input string) string {
 				// shotCnt = 0
 			}
 		} else {
-			// fmt.Println("Invalid input")
-			return "Invalid"
+			return "Invalid" //invalid characters
 		}
 	}
-	//ตอนสุดท้าย ต้อง revenge ทุก shot ห้ามน้อยกว่า
+
+	//at the end, must have revenged every shot
 	if revengeCnt < shotCnt { //have to revenge at least one shot for every S
 		return "Bad boy"
 	}
